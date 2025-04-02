@@ -4,13 +4,13 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'my-ecommerce-backend'
         DOCKER_TAG = "${BUILD_NUMBER}"
-        REGISTRY = 'harishkoppineni/my-ecommerce'
+        REGISTRY = 'saiyash000/my-ecommerce'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/arjunkoppineni/flask-jenkins.git', branch: 'main'
+                git url: 'https://github.com/aH0-STS/flask-jenkins.git', branch: 'main'
             }
         }
 
